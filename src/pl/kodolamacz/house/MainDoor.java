@@ -16,6 +16,7 @@ public class MainDoor {
 
     void open(int pin){
         if (pin == pin) isClosed=false;
+        else  throw  new RuntimeException();
     }
 
     public void changeWelcomeText(String new Text){

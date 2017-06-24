@@ -1,5 +1,7 @@
 package pl.kodolamacz.house;
 
+import java.util.Arrays;
+
 /**
  * Created by qba on 24.06.17.
  */
@@ -9,13 +11,26 @@ public class House {
 
     MainDoor mainDoor;
 
+    public int getNumperOfGuests() {
+        return numperOfGuests;
+    }
+
+    private  int numperOfGuests;
+
 
     public MainDoor getMainDoor(){
         return  mainDoor;
     }
 
     public void leave(){
+        numperOfGuests--;
         mainDoor.close();
+
+    }
+    public void enter(int pin){
+        numperOfGuests++;
+        mainDoor.open(pin);
+
     }
 
     public void createSampleRooms(){
@@ -49,4 +64,10 @@ public class House {
     }
 
 
+    @Override
+    public String toString() {
+        return "House{" +
+                "rooms=" + Arrays.toString(rooms) +
+                '}';
+    }
 }

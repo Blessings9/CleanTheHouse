@@ -6,7 +6,7 @@ package pl.kodolamacz.house;
 public class Room {
 
 
-    private String name;
+    private string name;
 
     private int length;
     private int width
