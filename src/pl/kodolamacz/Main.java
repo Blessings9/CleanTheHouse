@@ -34,12 +34,5 @@ public class Main {
         System.out.println("replacing" +g.countWhiteAndReplaceWithRed());
     }
 
-    /*
-            nested loop
-            do-while
 
-            else-if
-
-            exception
-            */
 }
