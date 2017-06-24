@@ -9,15 +9,15 @@ public class Room {
     private String name;
 
     private int length;
-    private int height
+    private int width
 
 
     private boolean isOpenedWindow;
 
-    public Room(string name,int length,int height){
+    public Room(string name,int length,int width){
         this.name=name;
         this.length=length;
-        this.height=height;
+        this.width=width;
 
     }
 
@@ -38,7 +38,7 @@ public class Room {
         return length;
     }
 
-    public int getHeight() {
-        return height;
+    public int getWidth() {
+        return width;
     }
 }

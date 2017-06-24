@@ -23,10 +23,13 @@ public class House {
         Room r2 = new Room("bedroom1",10,10);
         rooms[1]=r1;
         rooms[2]=r2;
-
+        enlarge(r1.getLength(),r1.getWidth());
+        shrink(r2);
 
 
     }
+
+
 
     public void doAiring(){
 
@@ -34,6 +37,15 @@ public class House {
             rooms[i].openWindow();
         }
 
+    }
+
+    private void enlarge(int length, int width) {
+        length=length*2;
+        width=width*2;
+    }
+
+    private void shrink(Room r2) {
+        r2 = new Room(r2.getName(),r2.getLength()/2,r2.getWidth()/2);
     }
 
 
